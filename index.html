@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Docker Web Server</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Docker Web Server</h1>
+
+    <p class="subtitle">
+        CodeAlpha DevOps Internship
+    </p>
+
+    <p class="task">
+        Task 4 - Web Server using Docker
+    </p>
+
+    <div class="status-grid">
+
+        <div class="status-card">
+            <h3>Docker</h3>
+            <p>Installed</p>
+        </div>
+
+        <div class="status-card">
+            <h3>Container</h3>
+            <p>Running</p>
+        </div>
+
+        <div class="status-card">
+            <h3>Nginx</h3>
+            <p>Active</p>
+        </div>
+
+        <div class="status-card">
+            <h3>Port</h3>
+            <p>8080</p>
+        </div>
+
+    </div>
+
+    <div class="clock">
+
+        <h2>Current Time</h2>
+
+        <p id="time"></p>
+
+    </div>
+
+    <div class="commands">
+
+        <h2>Commands Used</h2>
+
+<pre>
+docker build -t codealpha-webserver .
+Build Docker Image
+
+docker run -d -p 8080:80 --name mywebserver codealpha-webserver
+Run Docker Container
+
+docker ps
+View Running Containers
+
+docker stop mywebserver
+Stop Container
+
+docker rm mywebserver
+Remove Container
+</pre>
+
+    </div>
+
+    <div class="buttons">
+
+        <a href="https://docs.docker.com/" target="_blank">
+            Docker Documentation
+        </a>
+
+        <a href="https://github.com/" target="_blank">
+            Project Repository
+        </a>
+
+    </div>
+
+    <footer>
+
+        <p><strong>Created by Amnah</strong></p>
+
+        <span>CodeAlpha DevOps Internship</span>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
